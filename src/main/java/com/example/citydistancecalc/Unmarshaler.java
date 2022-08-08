@@ -21,9 +21,10 @@ public class Unmarshaler {
         Cities cities = (Cities) un.unmarshal (new File("/Users/sergejb/Desktop/test.xml"));
         for (City city: cities.getCities())
         {
-            cityRepository.save(city);
             System.out.println(city.getId());
             System.out.println(city.getName());
+            cityRepository.save(city);
+
         }
     }
 
