@@ -1,4 +1,5 @@
 package com.example.citydistancecalc.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -14,6 +15,8 @@ public class City {
     @Id
     private Long id;
     private String name;
+    @JsonIgnore
     private double latitude;
+    @JsonIgnore
     private double longitude;
 }
