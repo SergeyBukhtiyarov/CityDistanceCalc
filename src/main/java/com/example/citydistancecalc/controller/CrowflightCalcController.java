@@ -1,26 +1,27 @@
 package com.example.citydistancecalc.controller;
 
-import com.example.citydistancecalc.entity.Cities;
+
+import com.example.citydistancecalc.Crowflight;
 import com.example.citydistancecalc.entity.City;
 import com.example.citydistancecalc.repository.CityRepository;
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/cities")
-public class CityList {
+@RequestMapping("/calc")
+public class CrowflightCalcController {
+
+    @Autowired
+    Crowflight crowflight;
     @Autowired
     CityRepository cityRepository;
 
     @GetMapping()
-    public List<City> cities () {
-        return cityRepository.findAll();
-    };
-
+    public int calculate() {
+    City city0 = cityRepository.findById(1L).orElseThrow();
+    City city1 = cityRepository.findById(2L).orElseThrow();
+        return crowflight.getDistanceHav(city0,city1);
+    }
 }

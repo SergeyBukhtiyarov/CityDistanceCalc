@@ -17,7 +17,7 @@ public class UnmarshallXML {
     public void unmarshalXml() throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Cities.class);
         Unmarshaller un = context.createUnmarshaller();
-        Cities cities = (Cities) un.unmarshal (new File("/Users/sergejb/Desktop/test.xml"));
+        Cities cities = (Cities) un.unmarshal (new File("/Users/sergejb/Desktop/City.xml"));
         for (City city: cities.getCities())
         {
             System.out.println(city.getId());

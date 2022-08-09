@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MarshallXML {
 
-    File xmlFile = new File("/Users/sergejb/Desktop/test.xml");
+    File xmlFile = new File("/Users/sergejb/Desktop/City.xml");
 
     public void marshallXML() {
         try {

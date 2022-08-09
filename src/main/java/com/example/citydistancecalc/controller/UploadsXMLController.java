@@ -13,7 +13,7 @@ import javax.xml.bind.JAXBException;
 
 @RestController
 @RequestMapping("/uploads")
-public class UploadsXML {
+public class UploadsXMLController {
     @Autowired
     UnmarshallXML unmarshaller;
     @GetMapping()
