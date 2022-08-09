@@ -33,7 +33,7 @@ public class XmlTest {
     }
     @Test
     public void marshallXML() {
-        File xmlFile = new File("/Users/sergejb/Desktop/test.xml");
+        File xmlFile = new File("/Users/sergejb/Desktop/City.xml");
         try {
             JAXBContext context = JAXBContext.newInstance(Cities.class);
             Marshaller m = context.createMarshaller();
@@ -48,9 +48,15 @@ public class XmlTest {
             novokuibishevsk.setName("Novokuibishevsk");
             novokuibishevsk.setLatitude(53.09590);
             novokuibishevsk.setLongitude(49.9462);
+            City moscow = new City();
+            moscow.setId(3L);
+            moscow.setName("Moscow");
+            moscow.setLatitude(55.75222);
+            moscow.setLongitude(37.61556);
             List<City> cityList = new ArrayList<>();
             cityList.add(samara);
             cityList.add(novokuibishevsk);
+            cityList.add(moscow);
             cities.setCities(cityList);
             m.marshal(cities, System.out);
             m.marshal(cities, xmlFile);
