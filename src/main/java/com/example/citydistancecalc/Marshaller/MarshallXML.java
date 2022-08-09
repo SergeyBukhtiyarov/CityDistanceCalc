@@ -1,4 +1,4 @@
-package com.example.citydistancecalc;
+package com.example.citydistancecalc.Marshaller;
 
 import com.example.citydistancecalc.entity.Cities;
 import com.example.citydistancecalc.entity.City;
