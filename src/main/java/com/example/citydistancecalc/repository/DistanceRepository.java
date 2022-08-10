@@ -1,4 +1,7 @@
 package com.example.citydistancecalc.repository;
 
-public interface DistanceRepository {
+import com.example.citydistancecalc.entity.Distance;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DistanceRepository extends JpaRepository<Distance,Long> {
 }
