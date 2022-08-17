@@ -6,6 +6,7 @@ import com.example.citydistancecalc.repository.CityRepository;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 import javax.xml.bind.JAXBContext;
@@ -16,7 +17,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 public class CityDistanceCalcApplication {
 
     public static void main(String[] args) throws JAXBException {
