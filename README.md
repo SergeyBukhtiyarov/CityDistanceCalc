@@ -9,17 +9,19 @@
  #### 1.By default, this App contains 3 Cities(Liquibase),whitch uploads when the App starts.
 
  #### 2.To show list of all cityies in the DB 
- as example   -----  http://localhost:8080/cities
+ as example: 
+ - http://localhost:8080/cities
 
  #### 3.To calculate the distance between cities, You should input:
-                   1) city0 (From City <List of cities>);
-                   2) city1=(To City <List of cities>); 
-                   3) calculation type: <Crowflight,Distance matrix>
- as example   ----- http://localhost:8080/calc?city0=Moscow&city1=Novokuibishevsk&calculate=matrix
+                   1) From City name);
+                   2) To City name); 
+                   3) calculation type: <Crowflight,matrix>
+ as example:
+ - http://localhost:8080/calc?city0=Moscow&city1=Novokuibishevsk&calculate=matrix
 
- #### 4.To add another cities to the DB you should send POST request with XML payload (POSTMAN) to ----- http://localhost:8080/uploads
+ #### 4.To add another cities to the DB you should send POST request with XML payload (POSTMAN) to http://localhost:8080/uploads
 
- as example of POST request
+ as example of POST request:
  ```xml
  <cities>
 <city>
