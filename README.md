@@ -5,7 +5,7 @@
                                 - “Crowflight” (straight distance) between cities 
                                 - “Distance matrix” (distance table in the database).  
                    2)show list of all cityies in the DB;                            
-                   3)get XML POST request,parses it and stores it into the database;
+                   3)get XML,parses it and stores it into the database;
  #### 1.By default, this App contains 3 Cities(Liquibase),whitch uploads when the App starts.
 
  #### 2.To show list of all cityies in the DB 
@@ -17,7 +17,7 @@
                    3) calculation type: <Crowflight,Distance matrix>
  as example   ----- http://localhost:8080/calc?city0=Moscow&city1=Novokuibishevsk&calculate=matrix
 
- #### 4.To add another cities to the DB you should send XML POST request (POSTMAN) to ----- http://localhost:8080/uploads
+ #### 4.To add another cities to the DB you should send POST request with XML payload (POSTMAN) to ----- http://localhost:8080/uploads
 
  as example of POST request
  ```xml
