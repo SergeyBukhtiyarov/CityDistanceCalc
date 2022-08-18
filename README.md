@@ -8,7 +8,7 @@
                    3)get XML,parses it and stores it into the database;
 #### By default, this App contains 3 Cities(Liquibase),whitch uploads when the App starts.
 
-#### API has 3 endpoints:
+#### *API has 3 endpoints:*
 
  #### 1. /cities  
  Responses list of all cityies to GET request.
@@ -16,7 +16,7 @@
 
 
  #### 2. /calc
- Responses distance between cities to GET request with params:
+ #### Responses distance between cities to GET request with params:
                    1) From City name;
                    2) To City name; 
                    3) calculation type: <Crowflight,matrix>
