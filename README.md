@@ -1,23 +1,26 @@
-# CityDistanceCal 
-#This application  is able to:
+# *CityDistanceCal* 
+
+## *This application  is able to:*
                    1)calculate the distance between cities in two ways:
                                 - “Crowflight” (straight distance) between cities 
                                 - “Distance matrix” (distance table in the database).  
                    2)show list of all cityies in the DB;                            
                    3)get XML POST request,parses it and stores it into the database;
-# By default, this App contains 3 Cities(Liquibase),whitch uploads when the App starts.
+ #### 1.By default, this App contains 3 Cities(Liquibase),whitch uploads when the App starts.
 
-# To show list of all cityies in the DB -----  http://localhost:8080/cities
+ #### 2.To show list of all cityies in the DB 
+ as example   -----  http://localhost:8080/cities
 
-# To calculate the distance between cities, You should input:
-                                 - city0 (From City <List of cities>);
-                                 - city1=(To City <List of cities>); 
-                                 - calculation type: <Crowflight,Distance matrix>
------ http://localhost:8080/calc?city0=Moscow&city1=Novokuibishevsk&calculate=matrix
+ #### 3.To calculate the distance between cities, You should input:
+                   1) city0 (From City <List of cities>);
+                   2) city1=(To City <List of cities>); 
+                   3) calculation type: <Crowflight,Distance matrix>
+ as example   ----- http://localhost:8080/calc?city0=Moscow&city1=Novokuibishevsk&calculate=matrix
 
-# To add another cities to the DB you should send XML POST request (POSTMAN) to ----- http://localhost:8080/uploads
+ #### 4.To add another cities to the DB you should send XML POST request (POSTMAN) to ----- http://localhost:8080/uploads
 
-# The example of POST request
+ as example of POST request
+ ```xml
  <cities>
 <city>
 <id>1</id>
@@ -38,24 +41,19 @@
 <longitude>37.61556</longitude>
 </city>
 </cities> 
-
-
+```                              
                               
                               
-                              
-                              
-                              
-                              
-                              
+                                                   
                               
 Tools/Libraries
-•	IDEA
-•	Git
-•	Maven
-•	PostgreSQL DB
-•	Liquibase
-•	Java 
-•	JAXB
-•	Spring + Tomcat
+-	IDEA
+-	Git
+-	Maven
+-	PostgreSQL DB
+-	Liquibase
+-	Java 
+-	JAXB
+-	Spring + Tomcat
                               
                               
