@@ -1,7 +1,6 @@
 package com.example.citydistancecalc.controller;
 
 
-import com.example.citydistancecalc.Unmarshaller.UnmarshallXML;
 import com.example.citydistancecalc.entity.Cities;
 import com.example.citydistancecalc.entity.City;
 import com.example.citydistancecalc.repository.CityRepository;
@@ -17,8 +16,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/uploads")
 public class UploadsXMLController {
-    @Autowired
-    UnmarshallXML unmarshaller;
 
     @Autowired
     CityRepository cityRepository;
